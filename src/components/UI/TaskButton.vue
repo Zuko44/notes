@@ -7,7 +7,7 @@
 <script>
 </script>
 
-<style>
+<style scoped>
 .btn {
   margin-left: 10px;
   padding: 10px 15px;

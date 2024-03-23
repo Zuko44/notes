@@ -1,16 +1,16 @@
 <template>
-    <form @submit.prevent>
-      <h4>Создание задачи</h4>
-      <input
-      v-model="task.body"
-      class="input"
-      type="text"
-      placeholder="текст задачи"
-      >
-      <task-button @click="createTask" class="main_button">
-        Создать
-      </task-button>
-    </form>
+  <form @submit.prevent>
+    <h4>Создание задачи</h4>
+    <input
+    v-model="task.body"
+    class="input"
+    type="text"
+    placeholder="текст задачи"
+    >
+    <task-button @click="createTask" class="main_button">
+      Создать
+    </task-button>
+  </form>
 </template>
 
 <script>
@@ -46,17 +46,17 @@ export default {
 
 <style scoped>
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .input {
-  width: 95%;
-  border: 1px solid teal;
-  padding: 10px 15px;
-  margin-top: 15px;
+width: 95%;
+border: 1px solid teal;
+padding: 10px 15px;
+margin-top: 15px;
 }
 .main_button {
-  margin-top: 15px;
+margin-top: 15px;
 }
 </style>

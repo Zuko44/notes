@@ -29,8 +29,7 @@ export default {
       changeRename: false,
       tasks: [
         { id: 1, body: 'задача 1', done: false }
-      ],
-      body: ''
+      ]
     }
   },
 
@@ -72,20 +71,9 @@ export default {
     }
   },
 
-  computed: {
-    title: {
-      get () {
-        document.title = this.rename
-        return this.rename
-      }
-    }
-  },
-
   watch: {
-    title (val) {
-      document.title = val
-    },
     rename (newName) {
+      document.title = newName
       localStorage.rename = newName
     }
   }
